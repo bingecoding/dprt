@@ -1,6 +1,6 @@
 # dprt
-Data Parallel Ray Tracer
 
+Data Parallel Ray Tracer <br><br>
 This project is a stripped down version of LuxRays, which is a part of LuxCoreRender.\
 The code is kept to a bare minimum to help bootstrap the rendering process.\
 The advantage of this is that the entire rendering process can be understood from end-to-end,\
@@ -10,4 +10,7 @@ The code provides a robust framework to protoype other rendering solutions that 
 <br>
 The CPU versions can then be ported to OpenCL compatible devices to accelerate ray tracing (see kernels folder for examples).
 <br><br>
+
+## Render Process
+<br>
 ![Render Process](controlflow.png)
