@@ -11,6 +11,6 @@ The code provides a robust framework to protoype other rendering solutions that 
 The CPU versions can then be ported to OpenCL compatible devices to accelerate ray tracing (see kernels folder for examples).
 <br><br>
 
-## Render Process
+## Render process
 
 <img src="controlflow.png" width=80% height=80%>
