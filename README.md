@@ -12,4 +12,5 @@ The CPU versions can then be ported to OpenCL compatible devices to accelerate r
 <br><br>
 
 ## Render Process
-![Render Process](controlflow.png)
+
+<img src="controlflow.png" width=50% height=50%>
