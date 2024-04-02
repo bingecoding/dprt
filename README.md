@@ -1,7 +1,7 @@
 # dprt
 
 Data Parallel Ray Tracer <br><br>
-This project is a stripped down version of LuxRays, which is a part of LuxCoreRender.\
+This project is a stripped down version of LuxRays, which is a part of [LuxCoreRender](https://github.com/LuxCoreRender/LuxCore).\
 The code is kept to a bare minimum to help bootstrap the rendering process.\
 The advantage of this is that the entire rendering process can be understood from end-to-end,\
 with as little cognitive overload as possible.
