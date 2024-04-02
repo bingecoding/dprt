@@ -9,3 +9,5 @@ with as little cognitive overload as possible.
 The code provides a robust framework to protoype other rendering solutions that run on the CPU (see engines folder).
 <br>
 The CPU versions can then be ported to OpenCL compatible devices to accelerate ray tracing (see kernels folder for examples).
+<br><br>
+[Alt text](controlflow.png "Render process")
