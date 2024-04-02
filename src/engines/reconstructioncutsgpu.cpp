@@ -1,7 +1,7 @@
 /***************************************************************************
  * Copyright (c) 2014 Michael Walch                                        *
  *                                                                         *
- *   This project is based on LuxRays ; see https://luxcorerender.org       *
+ *   This project is based on LuxRays; see https://luxcorerender.org       *
  *   LuxRays is the part of LuxRender dedicated to accelerate the          *
  *   ray intersection process by using GPUs.                               *
  *                                                                         *
