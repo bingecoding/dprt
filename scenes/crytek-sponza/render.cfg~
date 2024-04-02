@@ -1,0 +1,66 @@
+image.width = 320
+image.height = 240
+
+image.filename = ../scenes/crytek-sponza/sponza.png
+#batch.halttime = 60
+#batch.haltspp = 1
+
+opencl.devices.select = 100
+opencl.workgroup.size = 1
+#opencl.workgroup.size = 64
+#opencl.global.work.size = 8192
+#opencl.global.work.size = 4096
+#opencl.global.work.size = 2048
+opencl.global.work.size = 1024
+#light.tree.cut.size = 300
+light.tree.cut.size = 1000
+
+# 0 PATHCPU
+# 1 VPLCPU
+# 2 LIGHTCUTSCPU
+# 3 RECONSTRUCTIONCUTSCPU
+# 4 PATHGPU 
+# 5 VPLGPU
+# 6 LIGHTCUTSGPU
+# 7 RECONSTRUCTIONCUTSGPU
+renderengine.type = 7
+path.sampler.spp = 1
+
+# Number of light paths is roughly equal to the specified amount when
+# the depth of the light path is 3.
+# Check value of PARAM_LIGHT_COUNT when using OpenCL kernel to see exact
+# amount.
+#light.paths = 100
+#light.paths = 1024
+#light.paths = 8096
+#light.paths = 12000
+#light.paths = 16384
+#light.paths = 32768
+#light.paths = 50000
+#light.paths = 65536
+#light.paths = 131072
+light.paths = 90000
+light.depth = 5
+# default is 0.1f
+#vpl.clamping = 0.5f
+
+# right handed coordinate system with z up
+# Blender uses the same coordinate frame
+# Cornell camera
+#camera.lookat.origin = -2.7 -8. 2.73
+#camera.lookat.target = -2.7 2. 2.730003
+#camera.lookat.origin = 100 50 150
+#camera.lookat.target = -700 50 150
+camera.lookat.origin = 4 1 14
+camera.lookat.target = -4 1 12
+
+camera.fieldofview = 39.1463
+
+# Sibenik02 camera
+#camera.lookat.origin = -2 -7 4
+#camera.lookat.target = -3 13 2
+
+camera.lookat.up = 0 0 1
+
+scene.file = ../scenes/crytek-sponza/sponza02.obj
+scene.materials = ../scenes/crytek-sponza/sponza02.mtl

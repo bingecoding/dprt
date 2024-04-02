@@ -1,0 +1,79 @@
+image.width = 512
+image.height = 512
+
+#image.filename = ../scenes/cornell/cornell-blinnPhongBall.png
+image.filename = ../scenes/cornell/cornell-box.png
+#batch.halttime = 60
+#batch.halttime = 100
+#batch.haltspp = 1
+
+opencl.devices.select = 100
+opencl.workgroup.size = 1
+#opencl.workgroup.size = 64
+#opencl.global.work.size = 
+#opencl.global.work.size = 8192
+#opencl.global.work.size = 4096
+#opencl.global.work.size = 2048
+opencl.global.work.size = 1024
+#opencl.global.work.size = 512
+#opencl.global.work.size = 256
+#opencl.global.work.size = 64
+#light.tree.cut.size = 300
+#light.tree.cut.size = 700
+light.tree.cut.size = 1000
+
+# 0 PATHCPU
+# 1 VPLCPU
+# 2 LIGHTCUTSCPU
+# 3 RECONSTRUCTIONCUTSCPU
+# 4 PATHGPU 
+# 5 VPLGPU
+# 6 LIGHTCUTSGPU
+# 7 RECONSTRUCTIONCUTSGPU
+renderengine.type = 7
+path.sampler.spp = 1
+
+# Number of light paths is roughly equal to the specified amount when
+# the depth of the light path is 3.
+# Check value of PARAM_LIGHT_COUNT when using OpenCL kernel to see exact
+# amount.
+#light.paths = 500
+#light.paths = 1024
+#light.paths = 1256
+#light.paths = 2048
+#light.paths = 4096
+#light.paths = 8192
+#light.paths = 12000
+#light.paths = 16384
+#light.paths = 32768
+#light.paths = 50000
+#light.paths = 65536
+light.paths = 131072
+#light.paths = 70000
+#light.paths = 400000
+light.depth = 3
+# default is 0.1f
+#vpl.clamping = 0.5f
+
+# right handed coordinate system with z up
+# Blender uses the same coordinate frame
+# Cornell camera
+camera.lookat.origin = -2.7 -8. 2.73
+camera.lookat.target = -2.7 2. 2.730003
+#camera.lookat.origin = 100 50 150
+#camera.lookat.target = -700 50 150
+
+camera.fieldofview = 39.1463
+
+# Sibenik02 camera
+#camera.lookat.origin = -2 -7 4
+#camera.lookat.target = -3 13 2
+
+camera.lookat.up = 0 0 1
+
+scene.file = ../scenes/cornell/cornell-box.obj
+scene.materials = ../scenes/cornell/cornell-box.mtl
+#scene.file = ../scenes/cornell/box.obj
+#scene.materials = ../scenes/cornell/box.mtl
+
+
